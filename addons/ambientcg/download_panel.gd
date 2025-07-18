@@ -160,6 +160,10 @@ func create_material(directory, file_name: String):
 
 		if file.containsn("Roughness"):
 			new_material.roughness_texture = load(file)
+
+		if file.containsn("Metalness"):
+			new_material.metallic_texture = load(file)
+
 		if file.containsn("AmbientOcclusion"):
 			new_material.ao_texture = load(file)
 	
